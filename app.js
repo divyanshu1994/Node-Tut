@@ -1,3 +1,3 @@
-var a=1;
+var a=3,b=3;
 
-console.log(a);s
+console.log(a+b);
