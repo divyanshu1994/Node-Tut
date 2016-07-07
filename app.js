@@ -1,3 +1,5 @@
-var greet=require("./greet.js");
+var greeter=require("./greeter");
 
-greet();
+greeter.english();
+greeter.hindi();
+greeter.spanish();
