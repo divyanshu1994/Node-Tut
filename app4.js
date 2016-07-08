@@ -1,7 +1,7 @@
 // using node internal event emmiter
 
 var Emmiter=require('events');
-var eventsType=require('./events_config').events; // to avoid typo errors
+var eventsType=require('./events_config').events; // to avoid typo errors !
 
 var emtr=new Emmiter();
 
