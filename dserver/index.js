@@ -19,7 +19,7 @@ DServer.prototype.add=function(route,callback)
     urls.push(url);
    if(urls.indexOf(url)>-1)
    {
-       console.log(url.route+"Added");
+       console.log(url.route+"Added !");
    }
 
 }
