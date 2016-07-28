@@ -1,3 +1,5 @@
+//using self made emmiter
+
 var Emitter=require('./emitter.js');
 
 var emttr=new Emitter();

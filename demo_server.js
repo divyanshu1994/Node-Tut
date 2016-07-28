@@ -15,7 +15,7 @@ ds.add('/json',function(req,res){
         name:"Divyanshu"
     }
 
-    res.end(JSON.stringify(obj));
+    res.end(JSON.stringify(obj));  // serialise obj to json
 });
 
 ds.createServer(1337,'127.0.0.1');

@@ -17,11 +17,7 @@ DServer.prototype.add=function(route,callback)
     }
 
     urls.push(url);
-   if(urls.indexOf(url)>-1)
-   {
-       console.log(url.route+"Added !");
-   }
-
+ 
 }
 DServer.prototype.createServer=function(port,host)
 {
@@ -29,8 +25,11 @@ DServer.prototype.createServer=function(port,host)
     http.createServer(function(req,res)
     {
    
-   
+   // as soon as reuest is passed from brower it runs
+
     var url_found=false;
+
+    //check whether it is added or not
     urls.filter(function(item)
     {
          if(item.route===req.url)
@@ -40,7 +39,7 @@ DServer.prototype.createServer=function(port,host)
         }
     });
 
-    if(!url_found)
+    if(!url_found)  // if url not found
     {
         res.writeHead(404,{"Content-Type":"text/plain"});
         res.end("Page not found");

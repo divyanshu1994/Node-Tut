@@ -1,4 +1,4 @@
-//module patterns
+//working on module patterns
 
 var p1=require('./patterns/pattern1');
 p1();

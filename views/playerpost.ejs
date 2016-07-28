@@ -1,0 +1,33 @@
+<html>
+    <head>
+        
+        <link type=text/css rel=stylesheet href=/assets/styles.css />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        </head>
+        
+        <body>
+       <h1 > FORM </h1>
+
+<form method="post" action="/player_post">
+       FIRSTNAME : <input type="text" name="firstname" id="firstname"/>
+    LASTNAME : <input type="text" name="lastname" id="lastname"/>
+        <br>
+        <button type="submit" value="Submit">Submit</button>
+        </form>
+
+        <script>
+            //make an ajax call to post data using json to playerpostjson
+
+            $.ajax({
+                type:'POST',
+                url:'playerpostjson',
+                data:JSON.stringify({
+                    first:'Divyanshu',
+                    last:'Sundriyal'
+                }),
+                dataType:'json',
+                contentType:'application/json'
+            });
+            </script>
+        </body>
+        </html>
